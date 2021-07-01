@@ -1,0 +1,220 @@
+
+*{
+margin: 0;
+} 
+body {
+overflow: hidden;
+/*position: relative;*/
+}
+.container {
+/*background-color: yellow;
+/*border: 2px solid black;*
+width:130%;*/
+/*
+position: absolute;
+top: 20px;
+height:700px;
+
+/*position: absolute; */
+/*overflow:hidden;*/
+}
+.bg{
+background-color:gray; 
+width: 150%;
+height: 100%;
+position: absolute;
+top:150px;
+}
+
+/*h2{
+
+ visibility: ;
+ opacity:10%;
+ color: red;
+}*/
+.ceiling {
+background: black;
+                
+position: absolute;
+width:120%;
+height: 29%;
+overflow:hidden;
+box-shadow:100px 100px 300px gray;
+
+}
+.ground{
+background: black; 
+width: 120%; 
+height: 29%;
+position: absolute;
+overflow: hidden;
+top:71%;
+box-shadow:100px 100px 300px gray;
+}
+.box{
+/*background:blue;
+width:30px; 
+height:30px;*/
+position: absolute;
+bottom:29%;
+left: 30px;
+}
+.hole1{
+
+background: gray;
+width: 70px;
+height: 29%;
+position: absolute;
+overflow: hidden;
+top:0px;
+left: 0px;
+/*
+animation: hole1 2s linear infinite;*/
+
+}
+
+.hole2{
+background:gray;
+width:70px;
+height:29%;
+position: absolute;
+/*bottom:0px;*/
+overflow:hidden;
+top:71%;
+left: 0px;
+/*
+animation: hole2 3s linear infinite;*/
+}
+.box{
+position: absolute;
+width: 0;
+height: 0;
+
+animation: box 5s linear infinte;
+
+border-left: 43.3px solid transparent;
+border-right: 47.3px solid transparent;
+border-bottom: 94.7px solid blue;
+
+/*border-left-height: 10%;
+border-right-height: 10%;*/
+
+
+
+
+
+}
+
+.moving1{
+position: absolute;
+animation: hole1 3s linear infinite; 
+}
+.moving2 {
+position: absolute;
+animation: hole2 4s linear infinite;
+}
+
+
+@keyframes hole1{
+0% {
+left: 110%;
+overflow: hidden;
+snack: 0s;
+
+}
+100% {
+left: -200px;
+}
+}
+@keyframes hole2{
+0% {
+left: 103%;
+overflow:hidden;
+snack: 0s;
+}
+100% {
+left: -100px;
+}
+}
+.doUp{
+/* animation: up 1s linear;*/
+top: 200px; 
+transform: rotate(180deg); 
+}
+.doDown{
+top: 64%;
+transform: rotate(0deg); 
+
+}
+.btnS {
+text-align:center;
+background: white;
+position: absolute;
+top: 35%;
+left: 400px;
+width: 600px;
+height: 500px;
+border: 1px solid white;
+box-shadow:100px 100px 300px black;
+border-radius: 10px;
+visibility: hidden;
+}
+.btn{
+
+background-size: cover; 
+font-size: 150px;
+color: lime;
+position:absolute;
+background: black;
+top: 59%;
+left: 450px;
+visibility:hidden;
+border: 10px solid black;
+border-radius: 20px;
+text-align: center;
+box-shadow:10px 10px 30px #000000;
+
+}
+.btn:hover {
+background: lime;
+border-radius: 5px;; 
+}
+/*
+@keyframes up{
+/* bottom: 200px;*/
+
+
+/*bottom: 300px;*/
+.scr{
+
+display:inline-block;
+font-size: 50px;
+
+padding-right: 
+border: 2px solid black;
+color: black;
+
+height: 
+border-radius: 2px;
+}
+.scr {
+display: flex;
+/*flex-dirextion: row;*/
+float: right;
+/*column-gap: 500px;*/
+
+}
+.end1,.highS{
+ font-size: 50px; 
+ color : black;
+ background: bk;
+ border: 0px solid black;
+ position:relative;
+ top:30px;
+ left: 40px;
+ width: 400px; 
+ height: 100px;
+float:left;
+
+}
+
