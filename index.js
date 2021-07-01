@@ -1,8 +1,8 @@
 var score = 0;
 var touched;
-var cross;
-var audio1 = new Audio('./audio1.wav')
-var over1 = new Audio('./over.wav')
+
+var audio1 = new Audio('audio1.wav')
+var over1 = new Audio('over.wav')
 //var highscore = 0;
 //var highscore = localStorage.getItem("myscore"); 
 
@@ -88,20 +88,11 @@ down.classList.remove('ground1');
 
 }
 
-else if( (h1x < 15  && h1x > 0) || (h2x < 15 && h2x>0) && cross) {
+else if( (h1x < 15  && h1x > 0) || (h2x < 15 && h2x>0) ) {
 //setInterval(() => {
 score  += 1; 
 getscore(score);
 audio1.play();
-/*
-cross = false; 
-setTimeout (() => {
-cross = true; 
-},1000);
-dur1 = parsefloat(window.getComputedStyle(hole1,null).getPropertyValue('animationDuration');
-newSpd = dur1-0.1; 
-hole1.style.animationDuration = newSpd+'s'
-*
 //}, 2000); 
 // ontouchstart?
 }
