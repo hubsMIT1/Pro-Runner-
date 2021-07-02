@@ -15,11 +15,16 @@ var bg = document.querySelector('.bg');
 var check  = document.querySelector('h2');
 
 var scr = document.querySelector('.end1'); 
+var up1 = document.querySelector('.up1');
+var down1 = document.querySelector('.down1');
 
+
+/*
 function reload() {
 location.reload();
 
 }
+*/
 /*
 up.ontouchstart = function () {
 box = document.querySelector('.box');
@@ -95,7 +100,7 @@ getscore(score);
 audio1.play();
 //}, 2000); 
 // ontouchstart?
-}
+
 /*
 up.ontouchstart = function (touched) {
 
@@ -109,33 +114,88 @@ touched = true;
 //setInterval(() => {
 //or ontouchstart?
 //if(touched == true) { 
-down.ontouchstart= function () {
-//console.log("ram");
-//audio1.play()
-//box = document.querySelector('.box');
-//box.innerHTML = up.style.bottom
-//box.classList.add("doDown");
-
-//box.style.top = 71+'%';
-//if(window.matchMedia("max-height:  
+down.addEventListener('click',()=> { 
 box.style.transform = 'rotate(0deg)';
 
 box.style.top= 66+'%';
 
 //if(x.
-}
-up.ontouchstart = function (touched) {
+});
+up.addEventListener('click',() =>  {
 
 //box = document.querySelector('.box1');
 box.style.top = 29 + '%'
 //box.classList.add('doUp');
 box.style.transform = 'rotate(180deg)';
 touched = true; 
-}
+});
 
+down1.addEventListener('click',() => { 
+box.style.transform = 'rotate(0deg)';
+
+box.style.top= 66+'%';
+
+//if(x.
+});
+
+//if(h1x < ) {
+/*
+window.addEventListener('click',()=> { 
+
+box.style.transform = 'rotate(0deg)';
+
+box.style.top= 66+'%';
+
+
+
+//if (h2x < 130 && h2x > 1){
+setTimeout( () => {
+window.addEventListener('click',()=> { 
+
+box.style.transform = 'rotate(180deg)';
+
+box.style.top= 29 +'%';
+
+});
+}, 1000);
+});
+*/
+
+up1.addEventListener('click',() =>  {
+
+//box = document.querySelector('.box1');
+box.style.top = 29 + '%'
+//box.classList.add('doUp');
+box.style.transform = 'rotate(180deg)';
+touched = true; 
+});
 //},2000);
 
+/*
+if(h1x < 130) {
+window.addEventListener('click',()=> { 
 
+box.style.transform = 'rotate(0deg)';
+
+box.style.top= 66+'%';
+
+});
+}
+if (h2x < 130 && h2x > 1){
+
+window.addEventListener('click',()=> { 
+
+box.style.transform = 'rotate(180deg)';
+
+box.style.top= 29 +'%';
+
+});
+}
+
+*/
+
+
+}
 
 },10);
 //document.querySelector('.high').innerHTML = "highscosnndnmdre"; 
