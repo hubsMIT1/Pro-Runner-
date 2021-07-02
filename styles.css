@@ -217,4 +217,25 @@ float: right;
 float:left;
 
 }
+.up1{
+position: absolute;
+bottom:-20%; 
+font-size: 100px;
+left: 50%;
+width:30%;
+background:lime;
+border:2px solid black;
+pointer: cursor;
+}
 
+
+.down1 {
+position: absolute;
+bottom:-30%; 
+font-size: 100px;
+left: 50%;
+width:30%;
+background: lime;
+border: 2px solid black;
+pointer:cursor;
+}
